@@ -1,0 +1,71 @@
+from Tkinter import *
+
+root = Tk()
+root.title("Grade Calculator")
+
+Title = Label(root, text="GPA calculator for foundation year.\n").grid(row=0, columnspan=3)
+GPA = Label(root, text="Report card:\n").grid(row=0, column=3, ipadx=100)
+
+
+comp_apps = Label(root, text="Computer Applications:").grid(row=1 ,column=0, sticky=E)
+comp_apps_excel = Label(root, text=" - Excel:").grid(row=1, column=1, sticky=E)
+comp_apps_excel_entry = Entry(root).grid(row=1, column=2)
+comp_apps_class = Label(root, text= " - Tests and Assignments:").grid(row=2, column=1, sticky=E)
+comp_apps_class_entry = Entry(root).grid(row=2, column=2)
+comp_apps_group = Label(root, text=" - Group project:").grid(row=3, column=1, sticky=E)
+compa_apps_group_entry = Entry(root).grid(row=3, column=2)
+Label(root).grid(row=4)
+
+coursework = Label(root, text="Coursework:").grid(row=5, column=0, sticky=E)
+labs = Label(root, text=" - Labs:").grid(row=5, column=1, sticky=E)
+labs_entry = Entry(root).grid(row=5, column=2)
+form_rep_1 = Label(root, text=" - Formal Report 1:").grid(row=6, column=1, sticky=E)
+form_rep_1_entry = Entry(root).grid(row=6, column=2)
+form_rep_2 = Label(root, text=" - Formal Report 2:").grid(row=7, column=1, sticky=E)
+form_rep_2_entry = Entry(root).grid(row=7, column=2)
+poster = Label(root, text=" - Poster:").grid(row=8, column=1, sticky=E)
+poster_entry = Entry(root).grid(row=8, column=2)
+Label(root).grid(row=9)
+
+r2s = Label(root, text="Routes to Success:").grid(row=10, column=0, sticky=E)
+r2s_1 = Label(root, text=" - Getting Started in HE:").grid(row=10, column=1, sticky=E)
+r2s_1_entry = Entry(root).grid(row=10, column=2)
+r2s_2 = Label(root, text=" - Making Progress:").grid(row=11, column=1, sticky=E)
+r2s_2_entry = Entry(root).grid(row=11, column=2)
+r2s_3 = Label(root, text=" - Sustaining Progress:").grid(row=12, column=1, sticky=E)
+r2s_3_entry = Entry(root).grid(row=12, column=2)
+Label(root).grid(row=13)
+
+exams = Label(root, text="Exams:",).grid(row=14, column=0, sticky=E)
+maths_a = Label(root, text=" - Maths A:").grid(row=14, column=1, sticky=E)
+maths_a_entry = Entry(root).grid(row=14, column=2)
+maths_b = Label(root, text=" - Maths B:").grid(row=15, column=1, sticky=E)
+maths_b_entry = Entry(root).grid(row=15, column=2)
+elec = Label(root, text=" - Electricity and Electronics:").grid(row=16, column=1, sticky=E)
+elec_entry = Entry(root).grid(row=16, column=2)
+ep = Label(root, text=" - Engineering Principles:").grid(row=17, column=1, sticky=E)
+ep_entry = Entry(root).grid(row=17, column=2)
+mech = Label(root, text=" - Mechanical Science:").grid(row=18, column=1, sticky=E)
+mech_entry = Entry(root).grid(row=18, column=2)
+Label(root).grid(row=19)
+
+surprise = Label(root, text="Surprise tests:").grid(row=20, column=0, sticky=E)
+sur_maths_a = Label(root, text=" - Maths A:").grid(row=20, column=1, sticky=E)
+sur_maths_a_entry = Entry(root).grid(row=20, column=2)
+sur_maths_b_entry = Label(root, text=" - Maths B:").grid(row=21, column=1, sticky=E)
+sur_maths_b_entry = Entry(root).grid(row=21, column=2)
+sur_elec = Label(root, text=" - Electricity and Electronics:").grid(row=22, column=1, sticky=E)
+sur_elec_entry = Entry(root).grid(row=22, column=2)
+sur_ep = Label(root, text=" - Engineering Principles:").grid(row=23, column=1, sticky=E)
+eur_ep_entry = Entry(root).grid(row=23, column=2)
+sur_mech = Label(root, text=" - Mechanical Science:").grid(row=24, column=1, sticky=E)
+sur_mech_entry = Entry(root).grid(row=24, column=2)
+
+report = Button(root, text="Get report").grid(row=25, column=2)
+
+info = Label(root, text="""It is important to note that each exam and the routes to success module
+are worth 12.5% of your total grade. The coursework module is worth 25%,
+with 10% coming from computer applications.""", fg='red').grid(row=26, columnspan=3)
+
+
+root.mainloop()
